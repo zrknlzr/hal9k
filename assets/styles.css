@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey; /*what else?*/
+}
+
+#frame {
+  width: 233px; 
+  height: 670px;
+  margin: 50px auto 0 auto;
+  padding: 15px 0 0 0;
+  background-color: #c4babb;
+  -webkit-box-shadow: 2px 2px 2px 3px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+#box {
+  width: 217px; 
+  height: 455px;
+  margin: 0 auto;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%,        transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+#speaker {
+width: 217px; 
+height: 184px;
+margin: 15px auto 0px auto;
+background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+}
+
+#eye{
+  margin-top:135px;
+  margin-left: -41px;
+}
+
+#black {
+  fill: #000000;
+}
+
+.white {
+  fill: #FFFFFF;
+}
+
+.red {
+  fill: hsl(360, 100%, 50%);
+  animation-name: glow-red;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes glow-red {
+    0% { fill: hsla(360, 100%, 50%, 0); }
+    100% { fill: hsla(360, 100%, 50%, 0.8); }
+}
+
+.redish {
+  fill: hsl(360, 100%, 50%);
+  animation-name: glow-redish;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes glow-redish {
+    0% { fill: hsla(360, 100%, 50%, 0); }
+    100% { fill: hsla(360, 100%, 50%, 0.8); }
+}
+
+.redishing {
+  fill: hsl(360, 100%, 50%);
+  animation-name: glow-redishing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes glow-redishing {
+    0% { fill: hsla(360, 100%, 50%, 0.1); }
+    100% { fill: hsla(360, 100%, 50%, 0.6); }
+}
+
+.yellow {
+  fill: hsla(54, 100%, 69%, 1);
+  animation-name: glow-yellow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes glow-yellow {
+    0% { fill: hsla(54, 100%, 69%, 0); }
+    100% { fill: hsla(54, 100%, 69%, 1); }
+}
